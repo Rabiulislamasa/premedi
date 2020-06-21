@@ -1,0 +1,296 @@
+/*		Default Layout: 960px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+*/
+
+
+
+
+
+
+
+
+
+
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width:1034px) {
+	
+}
+
+
+@media only screen and (max-width: 991px){
+	.h-control{width:50% !important;}
+	#tog-btn{display:block !important;}
+	#menuu{
+		margin-top:70px;
+		background-color:#33cccc !important;
+		width:0;
+		position:absolute !important;
+		z-index: 1;
+		top: 0;
+		right:0;
+		overflow-x: hidden;
+		transition: 0.8s;
+	}
+	#tog-btn2{display:block !important;}
+	#menuu ul li a:hover{color:black !important;}
+	#menuu ul li{
+		display: inline-block !important;
+		text-align: center;
+		margin-bottom: 15px;
+		margin-top: 15px;
+		width: 100%;
+		height:30px;
+	}
+	.d-inline.float-right.mr-5{
+    margin:4% !important;
+	margin-bottom: 6% !important;}
+	.icon::before{
+  content:"";
+  background-color:#cccccc;
+  width:150px;
+  height:1px;
+  left:20%;
+  top:8px;
+  position:absolute;
+}
+.icon::after{
+  content:"";
+  background-color:#cccccc;
+  width:150px;
+  height:1px;
+  top:8px;
+  right:20%;
+  position:absolute;
+}
+.heighttt{height:auto !important;}
+.text-uppercase.hovv {
+    width: 32%;
+    display: inline-block;
+}
+.sec-1div{margin-top:40px;}
+.sec-2-nav li {
+    list-style: none !important;
+    margin-right: 6px;
+}
+.col-12.col-xl-9.col-lg-9.pl-4 {
+    padding-left: 0rem !important;
+}
+#imgabw{
+    position: relative !important;
+    top: 10px;
+}
+.sec-4{height:auto !important;}
+#search-box {
+    width: 150px !important;;
+}
+
+#src-menu{float:none !important;}
+.col-10.col-xl-8.col-lg-8.mx-auto.mt-5.pt-5 {
+    margin-top: 0rem !important;
+    padding-top: 0rem !important;
+}
+.mx-auto.text-center.mt-5.pt-5 {
+    margin: 0 !important;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+.sec-1{height: 600px;}
+.fsize1{font-size:10px;}
+.fsize2{font-size:35px;}
+.fsize3{font-size:20px !important;}	
+.navbar-brand.text-color.text-uppercase.font-weight-bold.text-center.ml-5.fsize3 {
+    margin-left: 1.1rem !important;
+}
+.btn.d-inline.p-1 {
+    padding: 0 !important;
+}	
+#tog-btn{margin-right:0rem !important}	
+#src-menu{float:none !important;}
+.src-menu.d-inline{display:inline-block !important}
+.src-menu.form-inline{display:inline-block !important}
+.sec-1div{height:auto;margin-top:0px;}	
+	
+.icon::before{
+  content:"";
+  background-color:#cccccc;
+  width:80px;
+  height:1px;
+  left:15%;
+  top:8px;
+  position:absolute;
+}
+.icon::after{
+  content:"";
+  background-color:#cccccc;
+  width:80px;
+  height:1px;
+  top:8px;
+  right:15%;
+  position:absolute;
+}	
+
+.h-control{width:60% !important;}
+.text-uppercase.hovv {
+    width: 45%;
+    display: inline-block;
+    font-size: 10px;
+}
+.sec-2-nav li{
+	margin-right:0px ;
+	height:50px;
+}
+
+.px-3.ico-img {
+    padding-left: .5rem !important;
+    padding-right: .5rem !important;
+}
+.li-hov::after{
+	 content:"";
+  background-color:#33cccc;
+  width:0px;
+  height:0px;
+  top:18px;
+  right:-10px;
+  position:absolute;
+ -webkit-transform: rotate(45deg); /* Safari */
+   transform: rotate(45deg);
+}
+#search-box {
+    width: 110px !important;
+}
+.csec-2 {
+    height: 550px;
+    position: relative;
+}
+.col-xl-3.col-lg-3.col-md-4.col-12.pl-4{margin-top:80px !important;}
+}
+
+
+
+
+
+
+
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+.fsize1{font-size:12px;}
+.fsize2{font-size:35px;}
+.fsize3{font-size:25px;}
+.btn.d-inline.p-1 {
+    padding: .25 !important;
+}	
+	
+.icon::before{
+  content:"";
+  background-color:#cccccc;
+  width:120px;
+  height:1px;
+  left:20%;
+  top:8px;
+  position:absolute;
+}
+.icon::after{
+  content:"";
+  background-color:#cccccc;
+  width:120px;
+  height:1px;
+  top:8px;
+  right:20%;
+  position:absolute;
+}		
+.text-uppercase.hovv {
+    width: 48%;
+    display: inline-block;
+    font-size: 15px;
+}	
+.sec-2-nav li {
+    list-style: none !important;
+    margin-right: 6px;
+}
+#search-box {
+    width: 120px !important;
+}	
+.csec-2 {
+    height: 500px;
+    position: relative;
+}	
+}
+@media only screen and (min-width: 300px) and (max-width: 430px) {
+#ab-width{width:90% !important}
+}
+@media only screen and (min-width: 420px) and (max-width: 480px) {
+.text-uppercase.hovv {
+    width: 45%;
+    display: inline-block;
+    font-size: 12px;
+}
+.sec-2-nav li {
+    margin-right: 15px;
+}
+}
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

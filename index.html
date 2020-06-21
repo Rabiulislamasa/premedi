@@ -1,0 +1,602 @@
+<!doctype>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	 <title>Welcome to Our Hospital</title>
+	 <link rel="stylesheet" href="style.css"/>
+	 <link rel="stylesheet" href="css/responsive.css"/>
+	 <link rel="stylesheet" href="css/font-awesome.min.css"/>
+	 <link rel="stylesheet" href="css/_variables.scss"/>
+	 <link rel="stylesheet" href="css/owl.carousel.css" />
+	 <link rel="stylesheet" href="css/owl.theme.default.css" />
+	 <link rel="stylesheet" href="css/bootstrap.min.css" />
+	 <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		-->
+ </head>
+<body>
+	<section class="navsection ">
+		<div class="container">
+			<div class="fst-nav py-4 row"> <!-- white color,top sub nav-->
+				<div class="col-xl-3 col-lg-3 col-sm-6 col-md-6 col-6 float-left">
+					<div class="btn d-inline p-1 "><span><i class="fa fa-facebook" aria-hidden="true"></i></span></div>
+					<div class="btn d-inline p-1 "><span><i class="fa fa-twitter" aria-hidden="true"></i></span></div>
+					<div class="btn d-inline p-1 "><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></div>
+					<div class="btn d-inline p-1 "><span><i class="fa fa-instagram" aria-hidden="true"></i></span></div>
+					<div class="btn d-inline p-1 "><span><i class="fa fa-pinterest-p" aria-hidden="true"></i></span></div>
+					
+				</div>
+				<div class="col-xl-3 col-lg-3 col-sm-6 col-md-6 col-6 ">
+					<p class="sm-white fsize1 float-xl-none float-lg-none float-md-right float-sm-right float-right">Call Now: +880 0123 456 789</p>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-sm-6 col-md-6 col-6 ">
+					<p class="sm-white fsize1">E-mail: zerocaps@gmail.com</p>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-sm-6 col-md-6 col-6 ">
+					<button class="btn white fsize1 bg-color float-right">APPOINMENT</button>
+				</div>
+			</div>
+		</div>
+			<nav class="navbar w-100 navbar-expand-lg m-0 p-0 position-relative"><!--mein nav-->
+				<a class="navbar-brand text-color text-uppercase font-weight-bold text-center ml-5 fsize3" style="width:25%;" href="index.html">premedi</a>
+				<div class="bg-color position-relative float-right h-control" style="width:75%;height:70px;">
+					<div class="float-right p-2 mr-5 d-none" id="tog-btn" >
+						<span class="btn btn-mr mr-5 " id="bar-btn" onclick="openNav()"><i class="fa fa-bars white" aria-hidden="true"></i></span>
+						<div class="float-right" id="tog-btn2" >
+							<span class="btn btn-mr mr-5" id="btn-cross" onclick="removeNav()"><i class="fa fa-times white" aria-hidden="true"></i></span>
+						</div>
+					</div>
+					
+					<div class="menu position-relative" >
+						<div class="" id="menuu">
+							<ul class="ml-5 h-100 p-3 menu-ul" >
+								<li class="d-inline"><a href="index.html" class="mx-2 white">Home</a></li>
+								<li class="d-inline"><a href="blog.html" class="mx-2 white">Blog</a></li>
+								<li class="d-inline"><a href="department.html" class="mx-2 white">Department</a></li>
+								<li class="d-inline"><a href="service.html" class="mx-2 white">Services</a></li>
+								<li class="d-inline"><a href="contact.html" class="mx-2 white">Contact</a></li>
+								<li class="d-inline"><a href="about.html" class="mx-2 white">About</a></li>
+								<li class="d-inline float-right mr-5 pr-3" id="src-menu" style="">
+									<!-- Search form -->
+									<form class=" d-inline">
+									  <input class=" w-75 h-75 p-1" id="search-box" type="text" placeholder="Search" style="display:none;"
+										aria-label="Search">
+									  <i class="fa fa-search btn white d-inline" onclick="searchActive()" aria-hidden="true"></i>
+									</form>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+	</section>
+	<!--section 1 start here-->
+	<section class="sec-1">
+		<div class="h-50">
+			<div class="col-12 col-md-8 col-sm-8 col-lg-6 col-xl-6 pt-5">
+				<h1 class="text-center fsize2 font-weight-bold pt-2 text-animate">WE CARE ABOUT YOUR <span class="">HEALTH</span></h1>
+				<div class="text-center mt-4">
+					<button class="btn bt-hov d-inline text-color bg-color2 m-3">About Us</button>
+					<button class="btn bt-hov d-inline text-color bg-color2 m-3">Contact Us</button>
+				</div>
+			</div>
+		</div>
+		<div class="col-10 col-xl-8 col-lg-8 mx-auto mt-5 pt-5">
+			<div class="sec-1div">
+				<div class="row px-5 py-3">
+					<div class="col-xl-4 col-lg-4 col-12 col-md-6 p-3">
+						<select id="country position-absolute" class="btn bg-color3 white float-left w-100">
+							<option value="None">Location <i class="fa fa-stethoscope" aria-hidden="true"></i></option>
+							<option value="Dhaka">Dhaka</option>
+							<option value="Khulna">Khulna</option>
+							<option value="Barishal">Barishal</option>
+							<option value="Chitagong">Chitagong</option>
+							<option value="Rajshahi">Rajshahi</option>
+							<option value="Rongpur">Rongpur</option>
+							<option value="Sylet">Sylet</option>
+						</select>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-12 col-md-6  p-3">
+							<select id="doctor-type position-absolute" class="btn bg-color3 white float-left w-100">
+								<option value="None">Speciality<i class="fa fa-stethoscope" aria-hidden="true"></i></option>
+								<option value="Podiatrist">Podiatrist</option>
+								<option value="Pediatrician">Pediatrician</option>
+								<option value="Endocrinologist">Endocrinologist</option>
+								<option value="Neurologist">Neurologist</option>
+								<option value="Rheumatologist">Rheumatologist</option>
+								<option value="Allergist">Allergist</option>
+								<option value="Psychiatrist">Psychiatrist</option>
+								<option value="Nephrologist">Nephrologist</option>
+								<option value="GYN">GYN</option>
+								<option value="Pulmonologist">Pulmonologist</option>
+								<option value="Surgeon">Surgeon</option>
+								<option value="Emergency Physician">Emergency Physician</option>
+								<option value="Ophthalmologist">Ophthalmologist</option>
+								<option value="Oncologist">Oncologist</option>
+								<option value="Urologist">Urologist</option>
+								<option value="Otolaryngologist">Otolaryngologist</option>
+								<option value="Anesthesiologist">Anesthesiologist</option>
+								<option value="Dermatologist">Dermatologist</option>
+								<option value="Radiologist">Radiologist</option>
+								<option value="Gastroenterologist">Gastroenterologist</option>
+								<option value="Cardiologist">Cardiologist</option>
+								<option value="Orthopedist">Orthopedist</option>
+							</select>
+					</div>
+					<div class="col-xl-4 col-lg-4 col-md-8 col-12  p-3 mx-auto">
+						<button class="btn bg-color w-100"><a href="" class="white text-uppercase"> search</a></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--section 1 end here-->
+
+	<!--section 2 start here-->
+	<section class="sec-2">
+		<div class="container">
+			<div class="mx-auto text-center mt-5 position-relative">
+				<h3 class="font-weight-bold text-uppercase">our department</h3>
+				<p class="text-color2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				<div class="position-relative"><span class="icon text-color1ico-img"><img src="img/service.png" alt="" class="img-fluid" /></span></div>
+			</div>
+			<div class="row mt-5">
+				<div class="col-12 col-xl-3 col-lg-3">
+					<ul class="sec-2-nav">
+						<li class="text-uppercase hovv"><span class="px-3 ico-img"><img src="img/cerdio.png" alt="" class="img-fluid" /></span>Cardiology</li>
+						<li class="text-uppercase  hovv"><span class="px-3 ico-img"><img src="img/dna.png" alt="" class="img-fluid" /></span>NEUROLOGY</li>
+						<li class="text-uppercase  hovv"><span class="px-3 ico-img"><img src="img/dental.png" alt="" class="img-fluid" /></span>DEntal</li>
+						<li class="text-uppercase  hovv"><span class="px-3 ico-img"><img src="img/icon.png" alt="" class="img-fluid" /></span>Diagonistic</li>
+						<li class="text-uppercase  hovv"><span class="px-3 ico-img"><img src="img/opthal.png" alt="" class="img-fluid" /></span>OPHTHALMOLOGY</li>
+						<li class="text-uppercase  hovv"><span class="px-3 ico-img"><img src="img/amb.png" alt="" class="img-fluid" /></span>emergency</li>
+					</ul>
+				</div>
+				<div class="col-12 col-xl-9 col-lg-9 pl-4">
+					<div class="d-img"><img src="img/3646600.jpg" alt="" class="img-fluid w-100 h-100" /></div>
+					<h2 class="my-3" style="color:#393939;font-size:20px;">About the neurology</h2>
+					<p class="" style="color:#3c3a3a;font-size:14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+					<div class="row mt-4">
+						<div class="col-12 col-sm-6 col-md-6 col-xl-6 col-lg-6 my-2">
+							<span class="d-inline"><img src="img/ok.png" alt="" class="img-fluid"/></span><p class="d-inline ml-3">Care About Your Health</p>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-xl-6 col-lg-6 my-2">
+							<span class="d-inline"><img src="img/ok.png" alt="" class="img-fluid"/></span><p class="d-inline ml-3">Professional Doctor’s </p>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-xl-6 col-lg-6 my-2">
+							<span class="d-inline"><img src="img/ok.png" alt="" class="img-fluid"/></span><p class="d-inline ml-3">Fast and Flex Service </p>
+						</div>
+						<div class="col-12 col-sm-6 col-md-6 col-xl-6 col-lg-6 my-2">
+							<span class="d-inline"><img src="img/ok.png" alt="" class="img-fluid"/></span><p class="d-inline ml-3">Care About Your Health</p>
+						</div>
+						<button class="btn bg-color white mt-4 ml-4">Contact Us</button>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</section>
+	<!--section 2 end here-->
+	
+	<!--section 3 start here-->
+	<section class="sec-3 mt-5">
+		<div class="mx-auto text-center pt-5 position-relative">
+			<h3 class="font-weight-bold text-uppercase">our Services</h3>
+			<p class="text-color2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+			<div class="position-relative"><span class="icon text-color1"><span class="ico-img"><img src="img/service.png" alt="" class="img-fluid" /></span></div>
+		</div>
+		<div class="container py-5">
+			<div class="row pb-5">
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+					<div class="p-2">
+						<div class="py-4 hovvv2" style="background-color:white;height:250px;">
+							<div class="ser-icon mx-auto my-2"><img src="img/sergery.png" alt="" class="img-fluid ser-icon-size" /></div>
+							<h3 class="font-weight-bold pt-2 text-center" style="color:#393939;font-size:20px;">Heart Surgery</h3>
+							<p class="text-center py-2 px-2" style="color:#3c3a3a;font-size:14px;"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+					<div class="p-2">
+						<div class="py-4 hovvv2" style="background-color:white;height:250px;">
+							<div class="ser-icon mx-auto my-2"><img src="img/dental.png" alt="" class="img-fluid ser-icon-size" /></div>
+							<h3 class="font-weight-bold pt-2 text-center" style="color:#393939;font-size:20px;">Dental Care</h3>
+							<p class="text-center py-2 px-2" style="color:#3c3a3a;font-size:14px;"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+					<div class="p-2">
+						<div class="py-4 hovvv2" style="background-color:white;height:250px;">
+							<div class="ser-icon mx-auto my-2"><img src="img/eme.png" alt="" class="img-fluid ser-icon-size" /></div>
+							<h3 class="font-weight-bold pt-2 text-center" style="color:#393939;font-size:20px;">Emargency Service</h3>
+							<p class="text-center py-2 px-2" style="color:#3c3a3a;font-size:14px;"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+					<div class="p-2">
+						<div class="py-4 hovvv2" style="background-color:white;height:250px;">
+							<div class="ser-icon mx-auto my-2"><img src="img/dna.png" alt="" class="img-fluid ser-icon-size" /></div>
+							<h3 class="font-weight-bold pt-2 text-center" style="color:#393939;font-size:20px;">DNA Testing</h3>
+							<p class="text-center py-2 px-2" style="color:#3c3a3a;font-size:14px;"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+					<div class="p-2">
+						<div class="py-4 hovvv2" style="background-color:white;height:250px;">
+							<div class="ser-icon mx-auto my-2"><img src="img/blood.png" alt="" class="img-fluid ser-icon-size" /></div>
+							<h3 class="font-weight-bold pt-2 text-center" style="color:#393939;font-size:20px;">Blood Testing</h3>
+							<p class="text-center py-2 px-2" style="color:#3c3a3a;font-size:14px;"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+					<div class="p-2">
+						<div class="py-4 hovvv2" style="background-color:white;height:250px;">
+							<div class="ser-icon mx-auto my-2"><img src="img/amb.png" alt="" class="img-fluid ser-icon-size" /></div>
+							<h3 class="font-weight-bold pt-2 text-center" style="color:#393939;font-size:20px;">24/7 Support</h3>
+							<p class="text-center py-2 px-2" style="color:#3c3a3a;font-size:14px;"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+					<div class="p-2">
+						<div class="py-4 hovvv2" style="background-color:white;height:250px;">
+							<div class="ser-icon mx-auto my-2"><img src="img/genarel.png" alt="" class="img-fluid ser-icon-size" /></div>
+							<h3 class="font-weight-bold pt-2 text-center" style="color:#393939;font-size:20px;">General Treatment</h3>
+							<p class="text-center py-2 px-2" style="color:#3c3a3a;font-size:14px;"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+					<div class="p-2">
+						<div class="py-4 hovvv2" style="background-color:white;height:250px;">
+							<div class="ser-icon mx-auto my-2"><img src="img/free.png" alt="" class="img-fluid ser-icon-size " /></div>
+							<h3 class="font-weight-bold pt-2 text-center" style="color:#393939;font-size:20px;">Free Checkup</h3>
+							<p class="text-center py-2 px-2" style="color:#3c3a3a;font-size:14px;"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!--section 3 end here-->
+	
+	<!--section 4 start here-->
+	<section class="sec-4">
+		<div class="container position-relative">
+			<div class="row">
+				<div class="col-12 col-xl-7 col-lg-7 position-absolute img-ab" id="imgabw">
+					<div class="bg-color2 box-shaddow" id="">
+						<div class="mx-auto text-center pt-5">
+							<h3 class="font-weight-bold text-uppercase">appointment</h3>
+							<p class="text-color2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+						</div>
+						<div class="container">
+							<div class="row py-3 ">
+								<div class="col-10 col-sm-6 col-md-6 col-xl-6 col-lg-6 mx-auto p-2">
+									<input type="text" placeholder="Your Name :" class="m-3"/>
+								</div>
+								<div class="col-10 col-sm-6 col-md-6 col-xl-6 col-lg-6 mx-auto p-2">
+									<input type="text" placeholder="Your Phone :" class="m-3"/>
+								</div>
+								<div class="col-10 col-sm-6 col-md-6 col-xl-6 col-lg-6 mx-auto p-2">
+									<input type="text" placeholder="Your Mail :" class="m-3"/>
+								</div>
+								<div class="col-10 col-sm-6 col-md-6 col-xl-6 col-lg-6 mx-auto p-2">
+									<select name="" id="" class="w-100 m-3">
+										<option value="Date">Date :</option>
+										<option value="01">01</option>
+										<option value="02">02</option>
+										<option value="03">03</option>
+										<option value="04">04</option>
+										<option value="05">05</option>
+										<option value="06">06</option>
+										<option value="07">07</option>
+										<option value="08">08</option>
+										<option value="09">09</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+									</select>
+								</div>
+								<div class="col-10 mx-auto col-sm-6 col-md-6 col-xl-6 col-lg-6 p-2">
+									<select name="" id="" class="w-100 m-3">
+										<option value="Date">Department :</option>
+										<option value="Podiatrist">Podiatrist</option>
+										<option value="Pediatrician">Pediatrician</option>
+										<option value="Endocrinologist">Endocrinologist</option>
+										<option value="Neurologist">Neurologist</option>
+										<option value="Rheumatologist">Rheumatologist</option>
+										<option value="Allergist">Allergist</option>
+										<option value="Psychiatrist">Psychiatrist</option>
+										<option value="Nephrologist">Nephrologist</option>
+										<option value="GYN">GYN</option>
+										<option value="Pulmonologist">Pulmonologist</option>
+										<option value="Surgeon">Surgeon</option>
+										<option value="Emergency Physician">Emergency Physician</option>
+										<option value="Ophthalmologist">Ophthalmologist</option>
+										<option value="Oncologist">Oncologist</option>
+										<option value="Urologist">Urologist</option>
+										<option value="Otolaryngologist">Otolaryngologist</option>
+										<option value="Anesthesiologist">Anesthesiologist</option>
+										<option value="Dermatologist">Dermatologist</option>
+										<option value="Radiologist">Radiologist</option>
+										<option value="Gastroenterologist">Gastroenterologist</option>
+										<option value="Cardiologist">Cardiologist</option>
+										<option value="Orthopedist">Orthopedist</option>
+									</select>
+								</div>
+								<div class="col-10 mx-auto col-sm-6 col-md-6 col-xl-6 col-lg-6 p-2">
+									<select name="" id="" class="w-100 m-3">
+										<option value="Date">Doctors :</option>
+										<option value="Dr.Rabin Kumar">Dr.Rabin Kumar</option>
+										<option value="Dr.Rahul Mukhargy">Dr.Rahul Mukhargy</option>
+										<option value="Dr.Shaila Sabrin">Dr.Shaila Sabrin</option>
+										<option value="Dr.John Addams">Dr.John Addams</option>
+										<option value="Dr.Brod Hogg">Dr.Brod Hogg</option>
+										<option value="Dr.Cris Jordan">Dr.Cris Jordan</option>
+										<option value="Dr.Alex Cerry">Dr.Alex Cerry</option>
+										<option value="Dr.Josh Kameroon">Dr.Josh Kameroon</option>
+										<option value="Dr.Adam Gilcrist">Dr.Adam Gilcrist</option>
+										<option value="Dr.James Anderson">Dr.James Anderson</option>
+									</select>
+								</div>
+								<div class="col-10 mx-auto  p-3"><button class="btn m-3 w-100 white bg-color">Book An Appointment</button></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-5 d-none d-xl-block d-lg-block position-absolute img-ab2"><img src="img/6341009.png" alt="" class="img-fluid" /></div>
+			</div>
+		</div>
+	</section>
+	<!--section 4 end here-->
+	
+	<!--section 5 start here-->
+	<section class="sec-5 position-relative ">
+		<div class="mx-auto text-center mt-5 pt-5">
+			<h3 class="font-weight-bold text-uppercase mt-5">our specialist</h3>
+			<p class="text-color2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+			<div class="position-relative"><span class="icon text-color1"><span class="ico-img"><img src="img/service.png" alt="" class="img-fluid" /></span></div>
+			<div class="container mt-5">
+				<div id="owl-slider" class="owl-carousel">
+					<div class="item">
+						<div class="p-2" id="itemhov">
+							<div class="box-shaddow card-1 ">
+								<img src="img/d1.png" alt="" class="img-fluid card-img p-2" id="cardhov"/>
+								<div class="card-details text-center py-4 " id="cardhov">
+									<h4 class="font-weight-bold">DR.Anjelina Jolly</h4>
+									<p class="">MBBS,FCPS</p>
+									<p class="" style="font-size:14px;">Depertment of Cardiology</p>
+									<div class="d-none card-d-2" style="font-size:12px;"><i class="fa fa-clock-o d-inline white p-2" aria-hidden="true"></i><p class="white d-inline">Sat - Thu<span class="pl-3">5:00pm - 7:00pm</span></p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="p-2">
+							<div class="box-shaddow card-1">
+								<img src="img/d2.jpg" alt="" class="img-fluid card-img p-2" id="cardhov"/>
+								<div class="card-details text-center py-4 " id="cardhov">
+									<h4 class="font-weight-bold">DR.Anjelina Jolly</h4>
+									<p class="">MBBS,FCPS</p>
+									<p class="" style="font-size:14px;">Depertment of Cardiology</p>
+									<div class="d-none card-d-2" style="font-size:12px;"><i class="fa fa-clock-o d-inline white p-2" aria-hidden="true"></i><p class="white d-inline">Sat - Thu<span class="pl-3">5:00pm - 7:00pm</span></p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="p-2">
+							<div class="box-shaddow card-1">
+								<img src="img/d3.png" alt="" class="img-fluid card-img p-2" id="cardhov"/>
+								<div class="card-details text-center py-4 " id="cardhov">
+									<h4 class="font-weight-bold">DR.Anjelina Jolly</h4>
+									<p class="">MBBS,FCPS</p>
+									<p class="" style="font-size:14px;">Depertment of Cardiology</p>
+									<div class="d-none card-d-2" style="font-size:12px;"><i class="fa fa-clock-o d-inline white p-2" aria-hidden="true"></i><p class="white d-inline">Sat - Thu<span class="pl-3">5:00pm - 7:00pm</span></p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="p-2">
+							<div class="box-shaddow card-1">
+								<img src="img/d4.png" alt="" class="img-fluid card-img p-2" id="cardhov"/>
+								<div class="card-details text-center py-4 " id="cardhov">
+									<h4 class="font-weight-bold">DR.Anjelina Jolly</h4>
+									<p class="">MBBS,FCPS</p>
+									<p class="" style="font-size:14px;">Depertment of Cardiology</p>
+									<div class="d-none card-d-2" style="font-size:12px;"><i class="fa fa-clock-o d-inline white p-2" aria-hidden="true"></i><p class="white d-inline">Sat - Thu<span class="pl-3">5:00pm - 7:00pm</span></p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="p-2">
+							<div class="box-shaddow card-1">
+								<img src="img/d5.png" alt="" class="img-fluid card-img p-2" id="cardhov"/>
+								<div class="card-details text-center py-4 " id="cardhov">
+									<h4 class="font-weight-bold">DR.Anjelina Jolly</h4>
+									<p class="">MBBS,FCPS</p>
+									<p class="" style="font-size:14px;">Depertment of Cardiology</p>
+									<div class="d-none card-d-2" style="font-size:12px;"><i class="fa fa-clock-o d-inline white p-2" aria-hidden="true"></i><p class="white d-inline">Sat - Thu<span class="pl-3">5:00pm - 7:00pm</span></p></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="p-2">
+							<div class="box-shaddow card-1">
+								<button class="btn bg-color white p-5 text-uppercase" style="margin-top:50%;">All Doctors List</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--section 5 end here-->
+	
+	<!--section 6 start here-->
+	<section class="sec-6 bg-color4">
+		<div class="mx-auto text-center mt-5 pt-3">
+			<h3 class="font-weight-bold text-uppercase mt-5">RECENT POSTS</h3>
+			<p class="text-color2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+			<div class="position-relative"><span class="icon text-color1"><span class="ico-img"><img src="img/service.png" alt="" class="img-fluid" /></span></div>
+		</div>
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-12 col-xl-6 col-lg-6 p-3">
+					<div class="row bg-color2 heighttt" style="height:280px;">
+							<div class="col-12 col-xl-5 col-lg-5">
+								<img src="img/]79337.jpg" alt="" class="img-fluid w-100"  style="height:280px;"/>
+							</div>
+							<div class="col-12 col-xl-5 col-lg-5 pl-3 py-3">
+								<h2 class="my-3" style="color:#393939;font-size:20px;">Why primary treatment is important?</h2>
+								<p class="" style="color:#3c3a3a;font-size:15px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a href="singleblog.html" style="color:#3c3a3a;"> Rread More <span class="d-inline pl-2"><img src="img/arrow.png" alt="" class="img-fluid" /></span>
+								</a>
+							</div>
+					</div>
+				</div>
+				<div class="col-12 col-xl-6 col-lg-6 p-3">
+					<div class="row bg-color2 heighttt" style="height:280px;">
+							<div class="col-12 col-xl-5 col-lg-5">
+								<img src="img/mri.jpg" alt="" class="img-fluid w-100"  style="height:280px;"/>
+							</div>
+							<div class="col-12 col-xl-5 col-lg-5 pl-3 py-3">
+								<h2 class="my-3" style="color:#393939;font-size:20px;">Why primary treatment is important?</h2>
+								<p class="" style="color:#3c3a3a;font-size:15px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<a href="singleblog.html" style="color:#3c3a3a;"> Rread More <span class="d-inline pl-2"><img src="img/arrow.png" alt="" class="img-fluid" /></span>
+								</a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--section 6 end here-->
+	<!--footer start here-->
+	<footer class="footer-design">
+		<div class="container">
+			<div class="row pt-5">
+				<div class="col-xl-4 col-lg-4 col-12 col-md-6 white pr-5 pt-3">
+					<h4 class="font-weight-bold">About Us</h4>
+					<p class="my-4" style="font-size:14px;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et.</p>
+					<div class="my-2" style="font-size:14px;"><span class="d-inline pr-3"><i class="fa fa-map-marker" aria-hidden="true"></i></span>Mohammodpur, Townhall, Dhaka</div>
+					<div class="my-2" style="font-size:14px;"><span class="d-inline pr-3"><i class="fa fa-envelope" aria-hidden="true"></i></span>zerocaps@gmail.com</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-12 white pr-3 pt-3">
+					<h4 class="font-weight-bold">Navigation</h4>
+					<div class="row mt-4">
+						<div class="col-6 pr-2">
+							<a href="" class="white d-block" style="font-size:14px;"><span class="pr-3">>></span>Appoinment</a>
+							<a href="" class="white mt-3 d-block" style="font-size:14px;"><span class="pr-3">>></span>Our Specialists</a>
+							<a href="" class="white mt-3 d-block" style="font-size:14px;"><span class="pr-3">>></span>Why choose us</a>
+							<a href="" class="white mt-3 d-block" style="font-size:14px;"><span class="pr-3">>></span>Our Services</a>
+							<a href="" class="white mt-3 d-block" style="font-size:14px;"><span class="pr-3">>></span>Patient FAQ</a>
+						</div>
+						<div class="col-6 pl-2">
+							<a href="" class="white d-block" style="font-size:14px;"><span class="pr-3">>></span>Health Tips</a>
+							<a href="" class="white mt-3 d-block" style="font-size:14px;"><span class="pr-3">>></span>Our Latest News</a>
+							<a href="" class="white mt-3 d-block" style="font-size:14px;"><span class="pr-3">>></span>Patient Feedback</a>
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-xl-4 col-lg-4 col-12 pt-3">
+					<h4 class="font-weight-bold white">Instagram</h4>
+					<div class="row">
+						<div class="col-xl-4 col-lg-4 col-6 pl-3 mt-4" style="height:80px;"><img src="img/O68Z4K0.jpg" alt="" class="img-fluid w-100 h-100" /></div>
+						<div class="col-xl-4 col-lg-4 col-6 pl-3 mt-4" style="height:80px;"><img src="img/sl-2.jpg" alt="" class="img-fluid w-100 h-100" /></div>
+						<div class="col-xl-4 col-lg-4 col-6 pl-3 mt-4" style="height:80px;"><img src="img/hh.jpg" alt="" class="img-fluid w-100 h-100" /></div>
+						<div class="col-xl-4 col-lg-4 col-6 pl-3 mt-4" style="height:80px;"><img src="img/sl-3.jpg" alt="" class="img-fluid w-100 h-100" /></div>
+						<div class="col-xl-4 col-lg-4 col-6 pl-3 mt-4" style="height:80px;"><img src="img/88.jpeg" alt="" class="img-fluid w-100 h-100" /></div>
+						<div class="col-xl-4 col-lg-4 col-6 pl-3 mt-4" style="height:80px;"><img src="img/sl1.jpg" alt="" class="img-fluid w-100 h-100" /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="last-footer text-center white ">
+			<p class="py-3" style="font-size:14px;">Copyright © 2017. By<span class=""><a href="" class="white ml-2">MD Rabiul Islam Asa</a></span></p>
+		</div>
+	</footer>
+	<!--footer end here-->
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/owl.carousel.min.js" ></script>
+	<!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	--><script src="https://use.fontawesome.com/882895df1e.js"></script>
+	 <script src="js/custom.js"></script>
+	<script src="js/jquery-countTo.js"></script>
+<script type="text/javascript">
+		
+function openNav() {
+  document.getElementById("menuu").style.width = "90%";
+  document.getElementById("bar-btn").style.display = "none";
+  document.getElementById("btn-cross").style.display = "block";
+}		
+function removeNav() {
+  document.getElementById("menuu").style.width = "0%";
+  document.getElementById("bar-btn").style.display = "block";
+  document.getElementById("btn-cross").style.display = "none";
+}		
+function searchActive() {
+  document.getElementById("search-box").style.display = "block";
+  document.getElementById("search-box").style.display = "inline";
+}		
+
+/*function hovActive() {
+  document.getElementById("cardhov").style.transition = "1.5s";
+}
+ $(document).ready(function(){
+	$("#itemhov").hover(function(){
+		$("#cardhov").css("transition","1.5s");
+	});
+}); */
+$(document).ready(function(){
+	$(".hovv").mouseenter(function(){
+		$(this).addClass("li-hov");
+	});
+});
+$(document).ready(function(){
+	$(".hovv").mouseleave(function(){
+		$(this).removeClass("li-hov");
+	});
+});
+	 // count to 100 over 5 seconds (default is 1s)
+	$( window ).scroll(function(){
+	  $("#book").ready(function(){
+		 $(".timer-a").countTo(08, {"duration": 2});
+		 $(".timer-b").countTo(120, {"duration": 2});
+		 $(".timer-c").countTo(12, {"duration": 2});
+		 $(".timer-d").countTo(789, {"duration": 3});
+	  });
+	});
+	</script>
+</body>
+</html>
